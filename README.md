@@ -9,6 +9,7 @@ Start the project server with **npm start** or **node server**;
 
 ### Project Timeline
 
+:calendar: **07-08-2016** -> Configure mongoose and create CRUD on backend for User Schema/Model.
 
 :calendar: **05-08-2016** -> Add EJS template engine and configure express-session.
 
