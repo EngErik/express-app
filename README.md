@@ -9,6 +9,8 @@ Start the project server with **npm start** or **node server**;
 
 ### Project Timeline
 
+:calendar: **09-08-2016** -> Configuring LocalStrategy for passport.
+
 :calendar: **08-08-2016** -> Working with some modifiers, virtual attributes, validations and index creation
 on User model. Also, adding initial configuration of passport middleware for local strategy auth.
 
