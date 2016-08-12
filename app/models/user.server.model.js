@@ -28,7 +28,7 @@ var UserSchema = new Schema({
       type: String
     },
     providerId: String,
-    providerData{},
+    providerData: {},
     created: {
       type: Date,
       default: Date.now

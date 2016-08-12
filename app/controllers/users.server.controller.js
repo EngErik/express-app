@@ -14,7 +14,7 @@ var getErrorMessage = function(err) {
         message = 'Something went wrong';
     }
   } else {
-    for var(errName in err.errors) {
+    for (var errName in err.errors) {
       if(err.errors[errName].message) message = err.errors[errName].message;
     }
   }
@@ -26,11 +26,22 @@ exports.renderSignin = function(req, res, next) {
   if(!req.user) {
     res.render('signin', {
       title: 'Sign-in Form',
-      message: req.flash('error' || req.flash('info')
+      messages: req.flash('error' || req.flash('info'))
     });
   } else {
     return res.redirect('/');
   }
+};
+
+exports.renderSignup = function(req, res, next) {
+  if (!req.user) {
+    res.render('signup', {
+      title: 'Sign-up Form',
+      messages: req.flash('error')
+    });
+    } else {
+      return res.redirect('/');
+    }
 };
 
 exports.signup = function(req, res, next) {
@@ -58,7 +69,7 @@ exports.signup = function(req, res, next) {
 };
 
 exports.signout = function(req, res) {
-  res.logout();
+  req.logout();
   res.redirect('/');
 };
 

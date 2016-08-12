@@ -9,6 +9,8 @@ Start the project server with **npm start** or **node server**;
 
 ### Project Timeline
 
+:calendar: **12-08-2016** -> Bug fix and simple signin & signup implement.
+
 :calendar: **10-08-2016** -> Adjusting User Schema/model to support passport auth.
 
 :calendar: **09-08-2016** -> Configuring LocalStrategy for passport.
